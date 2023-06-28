@@ -11,6 +11,7 @@ stage('Deploy'){
 steps{
 sh 'sudo pm2 delete all'
 sh 'sudo pm2 start bin/www'
+sh 'echo hello world'
 }
 }
 
